@@ -1,0 +1,52 @@
+#food {
+  background: green;
+}
+p {
+  background: orange;
+}
+#photo2 {
+  float: right;
+}
+
+header {
+ font-size: 10em;
+ padding: -3em;
+ text-align: center;
+ top: 4em;
+ border: 4em;
+ margin: 0em;
+}
+
+ul.nav {  
+  scroll-padding-right: 5px;
+  background-color: #6ff175;
+  text-align: center;
+  height: 3em;
+ 
+}
+ul.nav > li {
+  display: inline;
+  -ms-text-justify: distribute;
+  padding: 10px;
+}
+ul.nav > li:hover {
+  background-color: #c8cbce;
+}
+ul.nav > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+#go {
+  background: rgb(25, 0, 255);
+  padding: 34;
+  margin: 2em;
+  font-size: 5em;
+  color: white;
+}
+
+body {
+  margin: 2%;
+  font-size: larger;
+}
+
