@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ka">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel=stylesheet href="css/styles.css">
+		
+	</head>
+	<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')"id="defaultOpen">მთავარი</button>
+<button class="tablink" onclick="openPage('News', this, 'red')" ">სიტუაცია ქუჩაში</button>
+<button class="tablink" onclick="openPage('Contact', this, 'red')">გამოკითხვა</button>
+<button class="tablink" onclick="openPage('About', this, 'red')">დაკავება</button>
+<button class="tablink" onclick="openPage('About2', this, 'red')">კანონმდებლობა</button>
+
+
+
+<div id="Home" class="tabcontent">
+  <h3>პირველი შეხება პოლიციასთან</h3>
+  <p>პოლიციასთან დაპირისპირება ქუჩაში და თქვენი უფლებები</p>
+</div>
+
+
+
+<div id="News" class="tabcontent">
+  <h3>სიტუაცია ქუჩაში</h3>
+  <p>თუ ქუჩაში პოლიციამ გაგაჩერათ!</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>გამოკითხვა და დათვალიერება</h3>
+  <p>შეუძლია თუ არა პოლიციას ქუჩაში გკითხოთ რამე ან მოახდინოს გარეგანი დათვალიერება</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>დაკავება</h3>
+  <p>რა მომენტიდან ვითვლები დაკავებულად? რა უფლებები მაქვს ამ დროს და რა ევალება პოლიციას?</p>
+</div>
+
+<div id="About2" class="tabcontent">
+  <h3>კანონმდებლობა</h3>
+  <p>რომელი კანონი მიცავს ან მავალდებულებს? რომელი კანონით ხელმძღვანელობს პოლიცია</p>
+</div>
+
+
+		<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+		</script>
+     
+	</body>
+</html> 
